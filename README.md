@@ -2,19 +2,18 @@
 
 **60 skills pour réussir son année de Terminale** (voie générale, spé Maths + Physique-Chimie + option Maths expertes) : toutes les matières, la méthode, le Grand oral, Parcoursup et l'organisation de l'année.
 
-## Installation (2 minutes)
+## Installation (1 minute)
 
-1. Dézippe le fichier `lycee-terminale.zip` où tu veux (par exemple dans `Documents`).
-2. Ouvre Claude Code et tape :
-   ```
-   /plugin marketplace add chemin/vers/lycee-terminale
-   ```
-   (remplace par le chemin du dossier dézippé, par exemple `/Users/yassine/Documents/lycee-terminale`)
-3. Puis :
-   ```
-   /plugin install terminale-reussite@lycee-terminale
-   ```
-4. C'est tout ! Les 60 skills se déclenchent automatiquement selon tes demandes.
+Ouvre Claude Code et tape :
+
+```
+/plugin marketplace add worrygpt/lycee-terminale
+/plugin install terminale-reussite@lycee-terminale
+```
+
+C'est tout ! Les 60 skills se déclenchent automatiquement selon tes demandes.
+
+Pour récupérer les mises à jour plus tard : `/plugin marketplace update lycee-terminale`
 
 ## Commandes rapides
 
