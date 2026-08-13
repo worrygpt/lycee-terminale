@@ -1,0 +1,24 @@
+name: Extraire le plugin depuis le zip
+on:
+  push:
+    paths:
+      - .github/workflows/extract.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip, commit et push
+        run: |
+          test -f lycee-terminale.zip || { echo "zip absent, rien a faire"; exit 0; }
+          unzip -o lycee-terminale.zip -d /tmp/extraction
+          rsync -a /tmp/extraction/lycee-terminale/ ./
+          rm lycee-terminale.zip
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Extraction du plugin terminale-reussite depuis le zip"
+          git push
