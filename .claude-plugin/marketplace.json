@@ -1,0 +1,13 @@
+{
+  "name": "lycee-terminale",
+  "owner": {
+    "name": "Yassine"
+  },
+  "plugins": [
+    {
+      "name": "terminale-reussite",
+      "source": "./terminale-reussite",
+      "description": "60 skills pour réussir son année de Terminale (bac 2027) : toutes les matières, le Grand oral, Parcoursup et la méthode de travail."
+    }
+  ]
+}
